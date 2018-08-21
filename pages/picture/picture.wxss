@@ -1,0 +1,14 @@
+/* pages/picture/picture.wxss */
+.motto{
+    margin-top: 300rpx;
+    font-size: 50rpx;
+    color: #b3d4db
+}
+.button{
+    margin-top: 60rpx;
+    border-radius:60rpx;
+    height: 80rpx;
+    width:300rpx;
+    text-align: center;
+    color: #4169E1;
+}

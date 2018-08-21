@@ -1,0 +1,8 @@
+<!--pages/welcome/welcome.wxml-->
+<view class="container">
+    <image class="myphoto" src="/data/1.jpg"></image>
+    <text class="motto">欢迎使用智能分类系统</text>
+</view>
+<button class="button2" bindtap="switch_page">
+  点击进入
+</button>

@@ -1,0 +1,14 @@
+{
+    "pages": [
+      "pages/welcome/welcome",
+      "pages/index/index",
+      "pages/logs/logs"
+    ],
+    "window": {
+      "backgroundTextStyle": "light",
+      "navigationBarBackgroundColor": "#b3d4db",
+      "navigationBarTitleText": "网宿AI",
+      "backgroundColor": "#FFB6C1",
+      "navigationBarTextStyle": "black"
+    }
+}

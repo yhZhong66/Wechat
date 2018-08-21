@@ -1,0 +1,110 @@
+/**app.wxss**/
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 80rpx 0;
+  box-sizing: border-box;
+} 
+.text{
+    font-family: Microsoft Yahei;     
+    font: 80px;
+    font-size: 20px;
+    font-weight: 600
+}
+.inputView{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.textbottom{
+  border: 2rpx black solid;
+  width: 400rpx;
+  height: 200rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+.show-btn {
+  margin-top: 100rpx;
+  color: #22cc22;
+}
+
+.modal-mask {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: #000;
+  opacity: 0.5;
+  overflow: hidden;
+  z-index: 9000;
+  color: #fff;
+}
+
+.modal-dialog {
+  width: 540rpx;
+  overflow: hidden;
+  position: fixed;
+  top: 50%;
+  left: 0;
+  z-index: 9999;
+  background: #f9f9f9;
+  margin: -180rpx 105rpx;
+  border-radius: 36rpx;
+}
+
+.modal-title {
+  padding-top: 50rpx;
+  font-size: 36rpx;
+  color: #030303;
+  text-align: center;
+}
+
+.modal-content {
+  padding: 50rpx 32rpx;
+}
+
+.modal-input {
+  display: flex;
+  background: #fff;
+  border: 2rpx solid #ddd;
+  border-radius: 4rpx;
+  font-size: 28rpx;
+}
+
+.input {
+  width: 100%;
+  height: 82rpx;
+  font-size: 28rpx;
+  line-height: 28rpx;
+  padding: 0 20rpx;
+  box-sizing: border-box;
+  color: #333;
+}
+
+input-holder {
+  color: #666;
+  font-size: 28rpx;
+}
+.button2{
+  border: 2px #FF8C00 ;
+  color: #fff ;
+  background: #FF8C00;
+  height: 120rpx;
+  width:320rpx;
+  font-family: Microsoft Yahei;    
+  font-size: 50rpx;
+}
+.button3{
+  color:rgb(14, 13, 13) ;
+  background: rgb(252, 249, 249) ;
+  height: 80rpx;
+  width:250rpx;
+  font-family: Microsoft Yahei;    
+  font-size: 40rpx;
+}

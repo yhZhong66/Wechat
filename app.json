@@ -1,0 +1,42 @@
+{
+  "pages": [
+    "pages/welcome/welcome",
+    "pages/index/index",
+    "pages/picture/picture",
+    "pages/user/user",
+    "pages/logs/logs"
+
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#4169E1",
+    "navigationBarTitleText": "网宿AI",
+    "backgroundColor": "#00FF00",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "selecctedColor": "#00008B",
+    "backgroundColor": "#4169E1",
+    "position": "bottom",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "视频",
+        "iconPath": "data/2.jpg",
+        "selectedIconPath": "data/2.jpg"
+      },
+      {
+        "pagePath": "pages/picture/picture",
+        "text": "照片",
+        "iconPath": "data/3.jpg",
+        "selectedIconPath": "data/3.jpg"
+      },
+      {
+        "pagePath": "pages/user/user",
+        "text": "个人中心",
+        "iconPath": "data/4.jpg",
+        "selectedIconPath": "data/4.jpg"
+      }
+    ]
+  }
+}

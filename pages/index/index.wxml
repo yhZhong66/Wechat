@@ -1,0 +1,49 @@
+<!--index.wxml-->
+
+<view  wx:if="{{hiddenName}}" class="text">请上传您需要分类的视频</view>
+<view  wx:if="{{confirm_label}}" class="text">小宿分类的结果为：</view>
+<view class="text">{{text}}</view>
+<view class="text">{{text2}}</view>
+<view class="text">{{text3}}</view>
+<button class="label_button2" wx:if="{{confirm_label}}" bindtap="display_label">请给小宿一个评价吧~</button>
+<text class="text2" wx:if="{{confirm_label}}">评价可以获取三个相关的推荐视频哦</text>
+<form  bindsubmit="formSubmit" bindreset="formReset" wx:if="{{confirm_label2}}">
+  <view >
+    <view>请选择你觉得正确的标签序号(若以上都不正确请直接提交，谢谢)</view>
+    <checkbox-group name='text_data'>
+      <label >
+      <checkbox hidden="{{hiddenlabel1}}" value='1' />
+      <text hidden="{{hiddenlabel1}}" class="label_text">1</text>
+      <checkbox hidden="{{hiddenlabel2}}"value='2' />
+      <text hidden="{{hiddenlabel2}}"class="label_text">2</text>
+       <checkbox hidden="{{hiddenlabel3}}"value='3' />
+      <text hidden="{{hiddenlabel3}}" class="label_text">3</text>
+      </label>
+    </checkbox-group>
+    </view >
+
+    <view class="buttonstyle">
+    <button class="label_button" formType="submit">提交并获取视频</button>
+  </view>
+</form>
+<text wx:if="{{confirm_video}}">再次点击可以更换推荐视频哦</text>
+
+<view class="container2" wx:if="{{confirm_video}}">
+  <text>1.</text>
+  <video  src="{{ptext0}}" poster="{{pimage0}}"></video>
+</view>
+<view class="container2" wx:if="{{confirm_video}}">
+<text>2.</text>
+<video  src="{{ptext1}}" poster="{{pimage1}}"></video>
+</view>
+<view class="container2"wx:if="{{confirm_video}}" >
+<text>3.</text>
+<video  src="{{ptext2}}" poster="{{pimage2}}"></video>
+</view>
+<view class="container">
+	<video src="{{tempFilePaths}}"></video>
+</view>
+<button class="button2"  bindtap="choosevideo">获取视频</button>
+<view class="text2" hidden="{{hiddenName2}}">
+  当前视频大小为 {{size}} M
+</view>
